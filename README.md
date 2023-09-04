@@ -45,7 +45,8 @@ This model utilizes standard machine learning process, which are:
 
 # Output
 A model used to predict temperature. Based on `test_data`, this model gives result as stated below:
-MSE Baseline	MSE Train	MSE Test
-Tn	4.924533	2.990025	3.049104
-Tx	5.148906	2.765183	2.328772
-Tavg	3.466188	1.620189	1.659483
+|MSE Baseline||MSE Train||MSE Test|
+--------------------------------------
+|Minumum||4.924533||2.990025||3.049104|
+|Maximum||5.148906||2.765183||2.328772|
+|Average||3.466188||1.620189||1.659483|
