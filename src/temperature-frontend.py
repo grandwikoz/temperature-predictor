@@ -90,7 +90,7 @@ with st.form("iris-app-form"):
 
     if submitted:
         def choose_ddd_car(ddd_car):
-            option_ddd_car:{
+            list:{
                 "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
                 "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
                 "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
@@ -101,7 +101,8 @@ with st.form("iris-app-form"):
                 "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
                 "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
-            return option_ddd_car.get(ddd_car, "Error, check again.")
+            option_ddd_car = list.get(ddd_car, "Error, check again.")
+            return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
 
         
