@@ -103,7 +103,7 @@ with st.form("iris-app-form"):
             }
         
         def choose_ddd_car(ddd_car):
-            option_ddd_car = list.get(ddd_car, "Error, check again.")
+            option_ddd_car = list["ddd_car"]
             return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
 
