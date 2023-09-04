@@ -89,7 +89,7 @@ with st.form("iris-app-form"):
     submitted = st.form_submit_button("Predict")
 
     if submitted:
-        match ddd_car:
+        #match ddd_car:
             case 'C':
                 ddd_car = [1, 0, 0, 0, 0, 0, 0, 0, 0]
             case 'E':
