@@ -90,6 +90,22 @@ with st.form("iris-app-form"):
     submitted = st.form_submit_button("Predict")
 
     if submitted:
+        def option_ddd_car(ddd_car):
+            option_ddd_car:{
+                "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
+                "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
+                "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
+                "NE":[0, 0, 0, 1, 0, 0, 0, 0, 0],
+                "NW":[0, 0, 0, 0, 1, 0, 0, 0, 0],
+                "S":[0, 0, 0, 0, 0, 1, 0, 0, 0],
+                "SE":[0, 0, 0, 0, 0, 0, 1, 0, 0],
+                "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
+                "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
+            }
+            return option_ddd_car.get(ddd_car, "Error, check again.")
+        ddd_car = option_ddd_car()
+
+        
         match ddd_car:
             case "C":
                 ddd_car = [1, 0, 0, 0, 0, 0, 0, 0, 0]
