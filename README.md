@@ -31,12 +31,12 @@ This model utilizes standard machine learning process, which are:
 3. Model building
    - This model uses mean squared error (MSE) as metrics
    - This model uses Gradient Boosting as algorithm
-   - Create baseline using using mean
+   - Create baseline using mean
    - Fit Gradient Boosting to `train_data`
    - Predict using `train_data`
    - Do subsequent cross validation using `valid_data` and find best parameters
-   - Fit Gradient Boosting to `test_data` using said parameters
-   - Predict
+   - Fit Gradient Boosting to `train_data` using said parameters
+   - Predict with both `train_data` and `test_data`
    - Repeat for all target outputs (this model intends to find three ouputs, which are average, minimum and maximum temperature)
    - Dump model into pickle using `pickle`
 
