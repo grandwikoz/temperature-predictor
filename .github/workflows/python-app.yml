@@ -48,7 +48,7 @@ jobs:
           END
     - name: Deploy to EC2
       env:
-        PATH_FILE: iris-classifier
+        PATH_FILE: temperature-predictor
         API_SERVICE_IMAGE: frontend
         STREAMLIT_SERVICE_IMAGE: backend
       run: |
