@@ -89,26 +89,30 @@ with st.form("iris-app-form"):
     submitted = st.form_submit_button("Predict")
 
     if submitted:
-        match ddd_car:
-            case 'C':
-                ddd_car = [1, 0, 0, 0, 0, 0, 0, 0, 0]
-            case 'E':
-                ddd_car = [0, 1, 0, 0, 0, 0, 0, 0, 0]
-            case 'N':
-                ddd_car = [0, 0, 1, 0, 0, 0, 0, 0, 0]
-            case 'NE':
-                ddd_car = [0, 0, 0, 1, 0, 0, 0, 0, 0]
-            case 'NW':
-                ddd_car = [0, 0, 0, 0, 1, 0, 0, 0, 0]
-            case 'S':
-                ddd_car = [0, 0, 0, 0, 0, 1, 0, 0, 0]
-            case 'SE':
-                ddd_car = [0, 0, 0, 0, 0, 0, 1, 0, 0]
-            case 'SW':
-                ddd_car = [0, 0, 0, 0, 0, 0, 0, 1, 0]
-            case 'W':
-                ddd_car = [0, 0, 0, 0, 0, 0, 0, 0, 1]
-
+        try:
+            match ddd_car:
+                case 'C':
+                    ddd_car = [1, 0, 0, 0, 0, 0, 0, 0, 0]
+                case 'E':
+                    ddd_car = [0, 1, 0, 0, 0, 0, 0, 0, 0]
+                case 'N':
+                    ddd_car = [0, 0, 1, 0, 0, 0, 0, 0, 0]
+                case 'NE':
+                    ddd_car = [0, 0, 0, 1, 0, 0, 0, 0, 0]
+                case 'NW':
+                    ddd_car = [0, 0, 0, 0, 1, 0, 0, 0, 0]
+                case 'S':
+                    ddd_car = [0, 0, 0, 0, 0, 1, 0, 0, 0]
+                case 'SE':
+                    ddd_car = [0, 0, 0, 0, 0, 0, 1, 0, 0]
+                case 'SW':
+                    ddd_car = [0, 0, 0, 0, 0, 0, 0, 1, 0]
+                case 'W':
+                    ddd_car = [0, 0, 0, 0, 0, 0, 0, 0, 1]
+        except Exception as e:
+            error = str(e)
+        return error
+        
         match month:
             case 'Januari':
                 month = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
