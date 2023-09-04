@@ -90,7 +90,7 @@ with st.form("iris-app-form"):
 
     if submitted:
         def choose_ddd_car(ddd_car):
-            ddd_car_list:{
+            ddd_car_list={
                 "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
                 "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
                 "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
@@ -101,7 +101,7 @@ with st.form("iris-app-form"):
                 "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
                 "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
-            option_ddd_car = ddd_car_list["ddd_car"]
+            option_ddd_car = ddd_car_list[ddd_car]
             return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
 
@@ -126,7 +126,7 @@ with st.form("iris-app-form"):
         #     case 'W':
         #         ddd_car = [0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-        month_list:{
+        month_list={
             "Januari":[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             "Februari":[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             "Maret":[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -142,7 +142,7 @@ with st.form("iris-app-form"):
             }
         
         def choose_month(month):
-            option_month = month_list["month"]
+            option_month = month_list[month]
             return option_month
         month = choose_month(month)
         
@@ -171,7 +171,7 @@ with st.form("iris-app-form"):
         #         month = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
         #     case 'Desember':
         #         month = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
-        province_list:{
+        province_list={
             "Nanggroe Aceh Darussalam":[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             'Sumatera Utara':[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             'Sumatera Barat':[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -208,7 +208,7 @@ with st.form("iris-app-form"):
             'Kalimantan Utara':[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
         def choose_province(province_id):
-            option_province = province_list["province_id"]
+            option_province = province_list[province_id]
             return option_province
         province_id = choose_province(province_id)
         
