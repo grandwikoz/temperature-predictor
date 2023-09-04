@@ -296,7 +296,7 @@ with st.form("iris-app-form"):
         }
     
         # post request
-        response = requests.post('http://52.221.187.13/:8000/predict', json=data)
+        response = requests.post('http://backend:8000/predict', json=data)
 
         # get result
         result = response.json()
