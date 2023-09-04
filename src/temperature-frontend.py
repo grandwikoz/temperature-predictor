@@ -103,7 +103,7 @@ with st.form("iris-app-form"):
             }
         
         def choose_ddd_car(ddd_car):
-            option_ddd_car = ddd_car_list["ddd_car"]
+            option_ddd_car = global ddd_car_list["ddd_car"]
             return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
 
@@ -144,7 +144,7 @@ with st.form("iris-app-form"):
             }
         
         def choose_month(month):
-            option_month = month_list["month"]
+            option_month = global month_list["month"]
             return option_month
         month = choose_month(month)
         
@@ -210,7 +210,7 @@ with st.form("iris-app-form"):
             'Kalimantan Utara':[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
         def choose_province(province_id):
-            option_province = province_list["province_id"]
+            option_province = global province_list["province_id"]
             return option_province
         province_id = choose_province(province_id)
         
