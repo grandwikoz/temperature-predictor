@@ -1,9 +1,6 @@
 # temperature-predictor
 A simple tool to predict temperature.
 
-# Background
-
-
 # Objective
 1. Average temperature
 2. Minimum temperature
