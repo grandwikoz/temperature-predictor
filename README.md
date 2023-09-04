@@ -40,6 +40,13 @@ This model utilizes standard machine learning process, which are:
    - Repeat for all target outputs (this model intends to find three ouputs, which are average, minimum and maximum temperature)
    - Dump model into pickle using `pickle`
 
+# Docker
+1. Backend: runs on host=8000
+2. Frontend: runs on streamlit with host=8501
+
+# Cloud
+Available through http://52.221.187.13:8501/
+
 # Output
 A model used to predict temperature. Based on `test_data`, this model gives result as stated below:
 
