@@ -89,7 +89,7 @@ with st.form("iris-app-form"):
     submitted = st.form_submit_button("Predict")
 
     if submitted:
-        def option_ddd_car(ddd_car):
+        def choose_ddd_car(ddd_car):
             option_ddd_car:{
                 "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
                 "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
@@ -102,7 +102,7 @@ with st.form("iris-app-form"):
                 "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_ddd_car.get(ddd_car, "Error, check again.")
-        ddd_car = option_ddd_car(ddd_car)
+        ddd_car = choose_ddd_car(ddd_car)
 
         
         # match ddd_car:
@@ -125,7 +125,7 @@ with st.form("iris-app-form"):
         #     case 'W':
         #         ddd_car = [0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-        def option_month(month):
+        def choose_month(month):
             option_month:{
                 "Januari":[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 "Februari":[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -141,7 +141,7 @@ with st.form("iris-app-form"):
                 "Desember":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_month.get(month, "Error, check again.")
-        month = option_month(month)
+        month = choose_month(month)
         
         # match month:
         #     case 'Januari':
@@ -169,7 +169,7 @@ with st.form("iris-app-form"):
         #     case 'Desember':
         #         month = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-        def option_province(province_id):
+        def choose_province(province_id):
             option_province:{
                 "Nanggroe Aceh Darussalam":[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 'Sumatera Utara':[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -207,7 +207,7 @@ with st.form("iris-app-form"):
                 'Kalimantan Utara':[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_province.get(province_id, "Error, check again.")
-        province_id = option_province(province_id)
+        province_id = choose_province(province_id)
         
             
         # match province_id:
