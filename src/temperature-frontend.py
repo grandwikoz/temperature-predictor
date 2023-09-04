@@ -88,22 +88,20 @@ with st.form("iris-app-form"):
     # submit button
     submitted = st.form_submit_button("Predict")
 
-    if submitted:
-        
-        ddd_car_list:{
-            "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
-            "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
-            "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
-            "NE":[0, 0, 0, 1, 0, 0, 0, 0, 0],
-            "NW":[0, 0, 0, 0, 1, 0, 0, 0, 0],
-            "S":[0, 0, 0, 0, 0, 1, 0, 0, 0],
-            "SE":[0, 0, 0, 0, 0, 0, 1, 0, 0],
-            "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
-            "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
+    ddd_car_list:{
+        "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
+        "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
+        "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
+        "NE":[0, 0, 0, 1, 0, 0, 0, 0, 0],
+        "NW":[0, 0, 0, 0, 1, 0, 0, 0, 0],
+        "S":[0, 0, 0, 0, 0, 1, 0, 0, 0],
+        "SE":[0, 0, 0, 0, 0, 0, 1, 0, 0],
+        "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
+        "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
-        
+    if submitted:
         def choose_ddd_car(ddd_car):
-            option_ddd_car = global ddd_car_list["ddd_car"]
+            option_ddd_car = ddd_car_list["ddd_car"]
             return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
 
@@ -144,7 +142,7 @@ with st.form("iris-app-form"):
             }
         
         def choose_month(month):
-            option_month = global month_list["month"]
+            option_month = month_list["month"]
             return option_month
         month = choose_month(month)
         
@@ -210,7 +208,7 @@ with st.form("iris-app-form"):
             'Kalimantan Utara':[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
         def choose_province(province_id):
-            option_province = global province_list["province_id"]
+            option_province = province_list["province_id"]
             return option_province
         province_id = choose_province(province_id)
         
