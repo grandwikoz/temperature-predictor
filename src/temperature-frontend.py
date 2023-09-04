@@ -89,18 +89,20 @@ with st.form("iris-app-form"):
     submitted = st.form_submit_button("Predict")
 
     if submitted:
-        def choose_ddd_car(ddd_car):
-            list:{
-                "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
-                "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
-                "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
-                "NE":[0, 0, 0, 1, 0, 0, 0, 0, 0],
-                "NW":[0, 0, 0, 0, 1, 0, 0, 0, 0],
-                "S":[0, 0, 0, 0, 0, 1, 0, 0, 0],
-                "SE":[0, 0, 0, 0, 0, 0, 1, 0, 0],
-                "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
-                "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
+        
+        list:{
+            "C":[1, 0, 0, 0, 0, 0, 0, 0, 0],
+            "E":[0, 1, 0, 0, 0, 0, 0, 0, 0],
+            "N":[0, 0, 1, 0, 0, 0, 0, 0, 0],
+            "NE":[0, 0, 0, 1, 0, 0, 0, 0, 0],
+            "NW":[0, 0, 0, 0, 1, 0, 0, 0, 0],
+            "S":[0, 0, 0, 0, 0, 1, 0, 0, 0],
+            "SE":[0, 0, 0, 0, 0, 0, 1, 0, 0],
+            "SW":[0, 0, 0, 0, 0, 0, 0, 1, 0],
+            "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
+        
+        def choose_ddd_car(ddd_car):
             option_ddd_car = list.get(ddd_car, "Error, check again.")
             return option_ddd_car
         ddd_car = choose_ddd_car(ddd_car)
