@@ -102,7 +102,7 @@ with st.form("iris-app-form"):
                 "W":[0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_ddd_car.get(ddd_car, "Error, check again.")
-        ddd_car = option_ddd_car()
+        ddd_car = option_ddd_car(ddd_car)
 
         
         # match ddd_car:
@@ -141,7 +141,7 @@ with st.form("iris-app-form"):
                 "Desember":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_month.get(month, "Error, check again.")
-        month = option_month()
+        month = option_month(month)
         
         # match month:
         #     case 'Januari':
@@ -207,7 +207,7 @@ with st.form("iris-app-form"):
                 'Kalimantan Utara':[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
             }
             return option_province.get(province_id, "Error, check again.")
-        province_id = option_province()
+        province_id = option_province(province_id)
         
             
         # match province_id:
