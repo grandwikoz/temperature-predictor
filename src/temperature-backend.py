@@ -20,21 +20,21 @@ async def hello():
 # load model function for Tn 
 def load_model_tn():
     # load model
-    with open("../model/tn_model.pkl", "rb") as file:
+    with open("model/tn_model.pkl", "rb") as file:
         model_tn = pickle.load(file)
     return model_tn
 
 # load model function for Tx
 def load_model_tx():
     # load model
-    with open("../model/tx_model.pkl", "rb") as file:
+    with open("model/tx_model.pkl", "rb") as file:
         model_tx = pickle.load(file)
     return model_tx
 
 # load model function for Tavg
 def load_model_tavg():
     # load model
-    with open("../model/tavg_model.pkl", "rb") as file:
+    with open("model/tavg_model.pkl", "rb") as file:
         model_tavg = pickle.load(file)
     return model_tavg
 
